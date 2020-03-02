@@ -84,10 +84,33 @@ header p {
 
 .icon {
   margin: 5px;
+  padding: 5px;
   border: 3px solid #fff;
   border-radius: 50%;
   width: 50px;
   height: 50px;
+}
+
+.decoration {
+  display: flex;
+  align-items: center;
+  float: left;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.line {
+  width: 40px;
+  height: 3px;
+  background: #ff0000;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff0000;
+  margin-left: -5px;
 }
 
 .profile-picture {
@@ -95,6 +118,7 @@ header p {
   border-radius: 50%;
   width: 100px;
   height: 100px;
+  margin-bottom: -10px;
 }
 
 .portfolio-section-top {
@@ -103,6 +127,7 @@ header p {
 }
 
 .portfolio-section-top p {
+  margin: 3px;
   text-align: left;
 }
 
@@ -114,6 +139,36 @@ header p {
 .portfolio-section-grey {
   padding: 36px;
   background-color: #f4f4f4;
+}
+
+.project-image {
+  margin: 36px 0 36px;
+}
+
+.project-card h3 {
+  display: inline;
+}
+
+.project-card p {
+  display: inline;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #ff0000;
+  font-weight: 700;
+}
+
+.tags {
+  margin: 20px 0 20px;
+}
+
+.tags p {
+  margin: 2px;
+  padding: 5px;
+  font-size: 10px;
+  color: #2b2e34;
+  background-color: #fddfe7;
 }
 
 footer {
