@@ -3,6 +3,8 @@ body {
   background-color: #fff;
 }
 
+/*General typo*/
+
 h1 {
   font-size: 28px;
   font-family: "Montserrat";
@@ -69,6 +71,7 @@ header {
   align-items: flex-end;
   justify-content: space-between;
 }
+/*Styling for text in header*/
 
 header h1 {
   text-align: left;
@@ -90,6 +93,8 @@ header p {
   width: 50px;
   height: 50px;
 }
+
+/* The small decoration in the presentation section*/
 
 .decoration {
   display: flex;
@@ -113,6 +118,8 @@ header p {
   margin-left: -5px;
 }
 
+/*Round profile picture*/
+
 .profile-picture {
   border: 3px solid #fff;
   border-radius: 50%;
@@ -121,12 +128,14 @@ header p {
   margin-bottom: -10px;
 }
 
-.portfolio-section-top {
+/*Different sections*/
+
+.presentation-section {
   padding: 36px;
   background-color: #f4f4f4;
 }
 
-.portfolio-section-top p {
+.presentation-section p {
   margin: 3px;
   text-align: left;
 }
@@ -140,6 +149,8 @@ header p {
   padding: 36px;
   background-color: #f4f4f4;
 }
+
+/*Project cards*/
 
 .project-image {
   margin: 36px 0 36px;
@@ -158,6 +169,8 @@ header p {
   color: #ff0000;
   font-weight: 700;
 }
+
+/*Styling for the pink tags*/
 
 .tags {
   margin: 20px 0 20px;
