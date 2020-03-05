@@ -14,7 +14,7 @@ h1 {
 
 /*Headers with red background*/
 h2 {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Montserrat";
   margin: 0px auto 36px;
   width: fit-content;
@@ -26,9 +26,9 @@ h2 {
 
 /*Mid-headers with red text*/
 h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Montserrat";
-  margin: auto;
+  margin: 60px auto 36px;
   width: fit-content;
   text-align: center;
   color: #ff0000;
@@ -38,7 +38,7 @@ h3 {
 h4 {
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 17px;
   display: inline;
   color: #fff;
 }
@@ -47,7 +47,7 @@ h4 {
 h5 {
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 14px;
+  font-size: 17px;
   margin-left: 10px;
   display: inline;
   color: #fff;
@@ -58,13 +58,13 @@ h6 {
   margin-top: 0;
   padding: 5px;
   color: #fff;
-  font-size: 24px;
+  font-size: 27px;
   font-family: "Montserrat";
 }
 
 p {
   text-align: center;
-  font-size: 14px;
+  font-size: 17px;
   font-family: "Roboto";
 }
 
@@ -85,18 +85,46 @@ header p {
   color: #fff;
 }
 
+/*Styling for links, >>*/
+a {
+  text-decoration: none;
+  color: #ff0000;
+  font-weight: 700;
+}
+
 /*Styling for paragraph in presentation*/
 .presentation-section p {
   margin: 3px;
   text-align: left;
 }
 
-.icon {
+/* .icon {
   margin: 3px;
   border: 3px solid #fff;
   border-radius: 50%;
   width: 40px;
   height: 40px;
+} */
+.icon-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-left: 5px;
+  width: 36px;
+  height: 36px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+
+.icon img {
+  width: 19px;
+  height: auto;
 }
 
 /*Round profile picture*/
@@ -151,7 +179,7 @@ header p {
 }
 
 /*Project cards*/
-.card-container {
+.project-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -159,7 +187,7 @@ header p {
 }
 
 .project-card {
-  margin: 5px;
+  margin: 10px;
   width: 250px;
 }
 
@@ -179,15 +207,15 @@ header p {
   display: inline;
 }
 
-.project-card a {
-  text-decoration: none;
-  color: #ff0000;
-  font-weight: 700;
-}
-
-.other-projects-container {
+/*Other projects section*/
+.other-projects p {
   display: inline;
 }
+
+.other-projects-links {
+  margin: 10px;
+}
+
 /*Styling for the pink tags*/
 .tags {
   margin: 20px 0 20px;
@@ -199,6 +227,77 @@ header p {
   font-size: 8px;
   color: #2b2e34;
   background-color: #fddfe7;
+}
+
+/*Styling My thoughts*/
+.thoughts-container p {
+  text-align: left;
+}
+
+.date-paragraph {
+  text-align: left;
+  margin: 5;
+  font-weight: 400;
+  color: #ff0000;
+}
+.black-bold-paragraph {
+  text-align: left;
+  margin: 0;
+  font-size: 21px;
+  font-weight: 700;
+  color: #000;
+}
+
+.other-thoughts {
+  margin: 10px;
+}
+
+.other-thoughts p {
+  display: inline;
+}
+
+/*Skills section*/
+.skills {
+  background: #f4f4f4;
+  padding: 46px 36px 0 36px;
+}
+
+.skills p {
+  text-align: center;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px 0;
+  margin: auto;
+  text-align: center;
+  margin-top: 36px;
+  width: fit-content;
+}
+
+/*More section*/
+.social-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon-red {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #ff0000;
+  border-radius: 50%;
+}
+
+.icon-red img {
+  width: 30px;
+  height: auto;
 }
 
 /*Footer styling*/
@@ -220,16 +319,16 @@ footer a {
   display: block;
   text-decoration: none;
   text-align: center;
-  font-size: 14px;
+  font-size: 17px;
   font-family: "Roboto";
   font-weight: 400;
   color: #fff;
 }
 
 /*Tablets & Desktop*/
-@media (min-width: 700px) {
+@media (min-width: 1024px) {
   header {
-    padding: 100px 100px 0 100px;
+    padding: 250px 250px 0 250px;
   }
 
   .profile-pic {
@@ -243,14 +342,14 @@ footer a {
   }
 
   .presentation-section {
-    padding: 50px 100px 50px 100px;
+    padding: 50px 250px 50px 250px;
   }
 
   .portfolio-section {
-    padding: 50px 100px 50px 100px;
+    padding: 50px 250px 50px 250px;
   }
 
   .portfolio-section-grey {
-    padding: 50px 100px 50px 100px;
+    padding: 50px 250px 50px 250px;
   }
 }
