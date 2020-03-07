@@ -69,7 +69,9 @@ p {
 }
 
 header {
-  background-color: #072bce;
+  background-image: url(./assets/images/yellow-wall.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 500px;
   padding: 100px 36px 0px;
   display: flex;
